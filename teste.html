@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Portal de Notícias Bagé</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        color: #333;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+      }
+      a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bem-vindo ao Portal de Noticias de Bagé</h1>
+    <ul>
+      <li><a href="">Inserir Notícia</a></li>
+      <li><a href=""></a>Listar Notícias</li>
+      <li><a href=""></a>Consultar Notícia</li>
+      <li><a href=""></a>Cadastrar Notícia</li>
+    </ul>
+
+    <form id="formConsulta">
+      <label for="codigo">Consultar Notícia por Código: </label><br />
+      <input type="number" id="codigo" name="codigo" required />
+      <button type="submit">Consultar</button>
+    </form>
+
+    <script>
+      document.getElementById("formConsulta").addEventListener("submit"
+      function (e) {
+          e.preventDefault();
+          const codigo = document.getElementById("codigo").value;
+          window.location.href = "/consultar-noticia/" + codigo;
+      });
+    </script>
+  </body>
+</html>

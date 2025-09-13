@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Notícia</title>
+  </head>
+  <body>
+    <h2>Cadastrar Notícia</h2>
+    <form action="/cadastrar-noticia" method="POST">
+      Título:
+      <input type="text" name="titulo" value="" />
+      <br />
+
+      <br />
+      Resumo:
+      <input type="text" name="resumo" value="" />
+      <br />
+
+      <br />
+      Conteúdo:
+      <textarea name="conteudo" cols="40" rows="4"></textarea>
+
+      <br />
+      <br />
+      <button type="submit">Salvar</button>
+    </form>
+  </body>
+</html>
