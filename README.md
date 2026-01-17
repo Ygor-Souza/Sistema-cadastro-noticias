@@ -1,7 +1,7 @@
 📰 Portal de Notícias de Bagé
     
-    Este projeto é uma aplicação web simples para gerenciar notícias de Bagé, permitindo cadastrar, listar e consultar notícias armazenadas em um banco PostgreSQL.
-    
+    Este projeto é uma aplicação web simples para gerenciar notícias de Bagé, permitindo 
+    cadastrar, listar e consultar notícias armazenadas em um banco PostgreSQL.
     O backend é implementado com Node.js e Express, e o frontend é feito com HTML simples e formulários.
 
 🛠 Tecnologias Utilizadas
